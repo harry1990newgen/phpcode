@@ -68,7 +68,7 @@
     echo "<div id='name'>$name</div>";
 ?>
 
-<div id="welcome">🚀 Welcome Batch-20 DevOps Engineers 🚀</div>
+<div id="welcome">🚀 Welcome $batchname DevOps Engineers 🚀</div>
 
 <button onclick="changeColor()">Change Name Color</button>
 <button onclick="changeWelcome()">Change Welcome Message</button>
