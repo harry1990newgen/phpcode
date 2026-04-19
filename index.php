@@ -65,10 +65,16 @@
 
 <?php
     $name = "Harry - Your Mentor";
+
+    // Fetch from Azure App Settings (Environment Variable)
+    $batchname = getenv('BATCH_NAME'); 
+
     echo "<div id='name'>$name</div>";
 ?>
 
-<div id="welcome">🚀 Welcome $batchname DevOps Engineers 🚀</div>
+<div id="welcome">
+    🚀 Welcome <?php echo htmlspecialchars($batchname); ?> DevOps Engineers 🚀
+</div>
 
 <button onclick="changeColor()">Change Name Color</button>
 <button onclick="changeWelcome()">Change Welcome Message</button>
